@@ -153,6 +153,7 @@ void EQWizardAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
+        (void) channelData;
 
         // ..do something to the data...
     }
